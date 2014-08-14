@@ -1,4 +1,4 @@
-fizzbuzz-selenium
+fizzbuzz-selenium [![Build Status](https://travis-ci.org/CharlieC3/fizzbuzz-selenium.svg?branch=dev)](https://travis-ci.org/CharlieC3/fizzbuzz-selenium)
 =================
 
 This is a QA engineering example. Please perform the following steps:
