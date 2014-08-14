@@ -1,6 +1,13 @@
 language: python
 python:
   - "2.7"
+  
 install:
   -  "pip install -r requirements.txt"
+  
 script: nosetests navigate_to_nfl_scoreboard.py
+
+addons:
+  sauce_connect:
+    username: "CharlieC3"
+    access_key: "91890423-5c5f-4eb0-8a46-49c6940d9954"

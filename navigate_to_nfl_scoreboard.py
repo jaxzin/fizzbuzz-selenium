@@ -7,7 +7,12 @@ import unittest, time, re
 
 class NavigateToNflScoreboard(unittest.TestCase):
     def setUp(self):
-        self.driver = webdriver.Firefox()
+        #username = os.environ["SAUCE_USERNAME"]
+        #access_key = os.environ["SAUCE_ACCESS_KEY"]
+        capabilities["tunnel-identifier"] = os.environ["TRAVIS_JOB_NUMBER"]
+        hub_url = "%s:%s@localhost:4445" % (username, access_key)
+        self.driver = webdriver.Remote(desired_capabilities=capabilities, command_executor="http://%s/wd/hub" % hub_url)
+        #self.driver = webdriver.Firefox()
         self.driver.implicitly_wait(30)
         self.base_url = "http://espn.go.com/"
         self.verificationErrors = []
