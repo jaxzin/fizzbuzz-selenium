@@ -1,4 +1,5 @@
 from selenium import webdriver
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
@@ -7,12 +8,10 @@ import unittest, time, re, os
 
 class NavigateToNflScoreboard(unittest.TestCase):
     def setUp(self):
-        #username = os.environ["SAUCE_USERNAME"]
-        #access_key = os.environ["SAUCE_ACCESS_KEY"]
-        #capabilities["tunnel-identifier"] = os.environ["TRAVIS_JOB_NUMBER"]
+        username = os.environ["SAUCE_USERNAME"]
+        access_key = os.environ["SAUCE_ACCESS_KEY"]
         hub_url = "%s:%s@localhost:4445" % (username, access_key)
-        self.driver = webdriver.Remote(desired_capabilities=None, command_executor="http://%s/wd/hub" % hub_url)
-        #self.driver = webdriver.Firefox()
+        self.driver = webdriver.Remote(desired_capabilities=DesiredCapabilities.CHROME, command_executor="http://%s/wd/hub" % hub_url)
         self.driver.implicitly_wait(30)
         self.base_url = "http://espn.go.com/"
         self.verificationErrors = []
