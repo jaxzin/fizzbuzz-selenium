@@ -10,6 +10,8 @@ Assumption:
 
 4. Tested with Windows machine. Not sure if it will work with other Operating system without any change.
 
+5. Assignement says to verify the tiletle as "NFL Scoreboard" while the actuall title of the page was "NFL Football Scores - NFL Scoreboard - ESPN - ESPN" . Hence I added the correct validation. 
+
 ------------------
 Steps to execute:
 
