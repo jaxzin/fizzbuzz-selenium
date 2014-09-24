@@ -7,8 +7,8 @@ import static org.junit.Assert.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
-
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -19,7 +19,7 @@ public class FizzbuzzSeleniumHover {
 
   @Before
   public void setUp() throws Exception {
-	//Use Firefox and timeout after 30 seconds
+	//Use Firefox driver
     driver = new FirefoxDriver();
     baseUrl = "http://espn.go.com/";
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -42,7 +42,9 @@ public class FizzbuzzSeleniumHover {
     
     try {
     	//Test for title NFL Scoreboard. Fail fast if not validated
-      assertEquals("NFL Football Scores - NFL Scoreboard - ESPN - ESPN", driver.getTitle());
+        WebElement el =  driver.findElement(By.className("section-title"));
+        String strng = el.getText();
+        Assert.assertEquals("NFL Scoreboard", strng);
     } catch (Error e) {
       verificationErrors.append(e.toString());
     }
