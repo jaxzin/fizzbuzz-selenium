@@ -16,6 +16,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.saucelabs.common.SauceOnDemandAuthentication;
 
@@ -46,7 +48,9 @@ public class FizzbuzzSeleniumClickTest {
     driver.get(baseUrl);
 	  //Click NFL
     driver.findElement(By.name("&lpos=sitenavdefault&lid=sitenav_nfl")).click();
-	  //Click Scores
+    WebDriverWait wait = new WebDriverWait(driver, 5);
+    wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Scores")));
+     	//Click Scores
     driver.findElement(By.linkText("Scores")).click();
 
     try {
