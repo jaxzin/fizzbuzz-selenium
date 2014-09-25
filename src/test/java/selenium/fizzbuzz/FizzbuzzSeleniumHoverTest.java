@@ -1,4 +1,4 @@
-package com.core.testcase;
+package selenium.fizzbuzz;
 
 import java.util.concurrent.TimeUnit;
 
@@ -12,7 +12,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-public class FizzbuzzSeleniumHover {
+public class FizzbuzzSeleniumHoverTest {
   private WebDriver driver;
   private String baseUrl;
   private StringBuffer verificationErrors = new StringBuffer();

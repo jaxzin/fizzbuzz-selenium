@@ -1,4 +1,4 @@
-package com.core.testcase;
+package selenium.fizzbuzz;
 
 import java.util.concurrent.TimeUnit;
 
@@ -9,7 +9,7 @@ import static org.junit.Assert.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class FizzbuzzSeleniumClick {
+public class FizzbuzzSeleniumClickTest {
   private WebDriver driver;
   private String baseUrl;
   private StringBuffer verificationErrors = new StringBuffer();
