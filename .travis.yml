@@ -1,1 +1,5 @@
 language: java
+addons:
+  sauce_connect:
+    username: "emilyburch"
+    access_key: "f52a0166-5b08-466b-850d-6aef91319313"
