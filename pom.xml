@@ -84,6 +84,12 @@
                 </goals>
                 <configuration>
                     <background>true</background>
+                    <systemProperties>
+          				<property>
+            				 <name>remote</name>
+             				<value>${remote}</value>
+          				</property>
+        			</systemProperties>
                 </configuration>
             </execution>
         </executions>

@@ -26,13 +26,16 @@ public class FizzbuzzSeleniumClickTest {
   private String baseUrl;
   private StringBuffer verificationErrors = new StringBuffer();
 
+  
   @Before
   public void setUp() throws Exception {
-	  //Using Firefox Driver
+	 //Using Firefox Driver
     driver = new FirefoxDriver();
     baseUrl = "http://espn.go.com/";
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-    //Set Up Sauce Lab
+    //Set Up Sauce Lab if not local
+    if(Boolean.getBoolean("remote")){
+    System.out.println("Running on SauceLabs");
     SauceOnDemandAuthentication authentication = new SauceOnDemandAuthentication("emilyburch", "f52a0166-5b08-466b-850d-6aef91319313");
     DesiredCapabilities capabilities = new DesiredCapabilities();
     capabilities.setCapability(CapabilityType.BROWSER_NAME, "firefox");
@@ -40,6 +43,10 @@ public class FizzbuzzSeleniumClickTest {
     this.driver = new RemoteWebDriver(
             new URL("http://" + authentication.getUsername() + ":" + authentication.getAccessKey() + "@ondemand.saucelabs.com:80/wd/hub"),
             capabilities);
+    }
+    else {
+     System.out.println("Running Locally");
+    }
   }
 
   @Test
@@ -48,7 +55,7 @@ public class FizzbuzzSeleniumClickTest {
     driver.get(baseUrl);
 	  //Click NFL
     driver.findElement(By.name("&lpos=sitenavdefault&lid=sitenav_nfl")).click();
-    WebDriverWait wait = new WebDriverWait(driver, 5);
+    WebDriverWait wait = new WebDriverWait(driver, 10);
     wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Scores")));
      	//Click Scores
     driver.findElement(By.linkText("Scores")).click();
