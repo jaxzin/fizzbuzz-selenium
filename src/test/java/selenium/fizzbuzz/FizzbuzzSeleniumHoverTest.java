@@ -11,6 +11,8 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -47,7 +49,8 @@ public class FizzbuzzSeleniumHoverTest {
     Actions actions = new Actions(driver);
     WebElement menuHoverLink = driver.findElement(By.name("&lpos=sitenavdefault&lid=sitenav_nfl"));
     actions.moveToElement(menuHoverLink).perform();
-    
+    WebDriverWait wait = new WebDriverWait(driver, 5);
+    wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Scores")));
     //Click sublink (Scores)
     WebElement subLink = driver.findElement(By.name("&lpos=sitenavdefault&lid=nfl_scores"));
     actions.moveToElement(subLink);
