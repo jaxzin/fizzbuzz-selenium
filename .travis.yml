@@ -1,5 +1,12 @@
 language: java
+env:
+  global:
+    - secure: cz0u6qbFyKRTH91QUxm94Fcwl0zlWU0nt1/sPQW865RQ0GQz+mDZhE+WTSkSgGUFXsACizAr485XwJEcJLHiWDWgASWfkevwvZgtMh6mSWpR8tmfwNcTNp8XMfXmL9hHe5W7v1J4ipvg4SC/l55seZZYkwQ/7taEkpkhS8i29Ns=
+    - secure: Zd/aoau2GEOWXUf+RGXpXdiWcUa0eleASwGpHWlfYsM8ywxIXXqoSq0TkEw770t2yCXpvxuAxgHSJy/ChO9tr580ZbLO5bMDsiWhV3V203dkjfEV7aUVJ3I6f7V4pa7v2iscyJNIoiKeSpOK+UWJtFZtK1JW4/DL8fALxJegh20=
+
 addons:
-  sauce_connect:
-    username: "emilyburch"
-    access_key: "f52a0166-5b08-466b-850d-6aef91319313"
+  sauce_connect: true
+
+before_install:
+  - "export DISPLAY=:99.0"
+  - "sh -e /etc/init.d/xvfb start"
