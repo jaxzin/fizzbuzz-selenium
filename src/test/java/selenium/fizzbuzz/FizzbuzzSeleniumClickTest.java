@@ -3,6 +3,8 @@ package selenium.fizzbuzz;
 import static org.junit.Assert.fail;
 
 import java.net.URL;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.After;
@@ -20,11 +22,13 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.saucelabs.common.SauceOnDemandAuthentication;
+import com.saucelabs.saucerest.SauceREST;
 
 public class FizzbuzzSeleniumClickTest {
   private WebDriver driver;
   private String baseUrl;
   private StringBuffer verificationErrors = new StringBuffer();
+  private String sessionId;
 
   
   @Before
@@ -59,14 +63,28 @@ public class FizzbuzzSeleniumClickTest {
     wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Scores")));
      	//Click Scores
     driver.findElement(By.linkText("Scores")).click();
-
+    //Update SauceLabs
+    this.sessionId = ((RemoteWebDriver)driver).getSessionId().toString();
+    SauceREST client = new SauceREST("emilyburch", "f52a0166-5b08-466b-850d-6aef91319313");
+    Map<String, Object> updates = new HashMap<String, Object>();
+    updates.put("name", "fizzbuzz selenium");  updates.put("passed", true);
+    updates.put("build", "fizzbuzz-click");
+    client.updateJobInfo(sessionId, updates);
+    
     try {
     	//Test for title NFL Scoreboard. Fail fast if not validated
         WebElement el =  driver.findElement(By.className("section-title"));
         String strng = el.getText();
         Assert.assertEquals("NFL Scoreboard", strng);
+
+        client.jobPassed(sessionId);
+
+        
     } catch (Error e) {
+    
+        client.jobFailed(sessionId);
       verificationErrors.append(e.toString());
+      
     }
   }
 
