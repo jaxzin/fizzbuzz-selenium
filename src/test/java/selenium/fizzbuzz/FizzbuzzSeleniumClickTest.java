@@ -63,28 +63,31 @@ public class FizzbuzzSeleniumClickTest {
     wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Scores")));
      	//Click Scores
     driver.findElement(By.linkText("Scores")).click();
+    
+    
     //Update SauceLabs
-    this.sessionId = ((RemoteWebDriver)driver).getSessionId().toString();
     SauceREST client = new SauceREST("emilyburch", "f52a0166-5b08-466b-850d-6aef91319313");
+    if(Boolean.getBoolean("remote")){this.sessionId = ((RemoteWebDriver)driver).getSessionId().toString();
     Map<String, Object> updates = new HashMap<String, Object>();
     updates.put("name", "fizzbuzz selenium");  updates.put("passed", true);
     updates.put("build", "fizzbuzz-click");
     client.updateJobInfo(sessionId, updates);
-    
+    }
     try {
     	//Test for title NFL Scoreboard. Fail fast if not validated
         WebElement el =  driver.findElement(By.className("section-title"));
         String strng = el.getText();
         Assert.assertEquals("NFL Scoreboard", strng);
-
+        if(Boolean.getBoolean("remote")){
         client.jobPassed(sessionId);
-
+        }
         
     } catch (Error e) {
     
+    	if(Boolean.getBoolean("remote")){
         client.jobFailed(sessionId);
       verificationErrors.append(e.toString());
-      
+    	}
     }
   }
 
