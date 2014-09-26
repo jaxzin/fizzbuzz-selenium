@@ -9,3 +9,9 @@ This is a QA engineering example. Please perform the following steps:
   1. Your test should navigate to NFL > Scores link and validate the browser is now on a page titled "NFL Scoreboard".
 1. [Create a pull request](https://help.github.com/articles/creating-a-pull-request) and include instructions in the summary on how to run the test and replicate your results.
 1. [Setup your fork for continuous integration](http://docs.travis-ci.com/user/languages/java/) using https://travis-ci.org/ and then update this README so it [includes the Travis build status image](http://docs.travis-ci.com/user/status-images/).
+
+###Travis CI Status
+[![Build Status](https://travis-ci.org/ImagineersApprentice/fizzbuzz-selenium.svg?branch=EmilyBurch)](https://travis-ci.org/ImagineersApprentice/fizzbuzz-selenium)
+
+###SauceLabs Status
+[![Sauce Test Status](https://saucelabs.com/buildstatus/emilyburch)](https://saucelabs.com/u/emilyburch)
