@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
+
+
+namespace EnterprizePortal
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            
+            ChromeDriver d = new ChromeDriver("C:\\ChromeDriver");
+
+            IWebDriver driver = d;
+        
+            driver.Navigate().GoToUrl("http://scores.espn.go.com/nfl/scoreboard");
+
+            IWebElement NFLLINK = driver.FindElement(By.Name("&lpos=sitenavdefault&lid=sitenav_main-logo"));
+
+            
+        }
+    }
+}
