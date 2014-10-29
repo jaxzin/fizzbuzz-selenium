@@ -36,8 +36,10 @@ public class TestMe {
 	we2.click();//at last Menu Item Click
 	System.out.println("title:"+driver.getTitle());
 	String bodyText = driver.getTitle();
-	//assertTrue("NFL Scoreboard title check", bodyText.contains("NFL Scoreboard"));
-	assertTrue("Verification failed: Element1 and Element2 are not same.",Element1.equals(driver.findElement(By.id(Element2 )).getText()));
+	//Assert.assertTrue("NFL Scoreboard title check", bodyText.contains("NFL Scoreboard"));
+	Assert.assertTrue(bodyText.contains("NFL Scoreboard"));
+	//assertTrue("Verification failed: Element1 and Element2 are not same.",Element1.equals(driver.findElement(By.id(Element2 )).getText()));
+	//assertTrue("Verification Passed : title M",Element1.equals(driver.findElement(By.id(Element2 )).getText()));
 	}
 
 }
