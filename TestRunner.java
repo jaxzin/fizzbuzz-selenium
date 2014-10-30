@@ -4,7 +4,7 @@ import org.junit.runner.notification.Failure;
 
 public class TestRunner {
    public static void main(String[] args) {
-      Result result = JUnitCore.runClasses(TestJunit.class);
+      Result result = JUnitCore.runClasses(CheckPageTitleNflScoresTestng.class);
       for (Failure failure : result.getFailures()) {
          System.out.println(failure.toString());
       }
@@ -23,6 +23,6 @@ C:\java -cp "C:\TestNG_WORKSPACE" org.testng.TestNG testng.xml
  // testng.xml is the maven file we created to test include the test case.
 
 Using Junit
-C:\Junit_WorkSpace/javac  CheckPageTitleNflScores.java
+C:\Junit_WorkSpace/javac  CheckPageTitleNflScores.java TestRunner.java
 C:\Junit_WORKSPACE\java TestRunner
 */
