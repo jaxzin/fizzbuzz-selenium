@@ -16,6 +16,7 @@ public class CheckPageTitleNflScores{
 public void setup(){
 Webdriver driver = new FirefoxDriver();
 driver.get("http://www.espn.go.com/");
+Thread.Sleep(500);
 }
 @Test
 public void checkPageTitle() throws Exception{
@@ -23,7 +24,7 @@ public void checkPageTitle() throws Exception{
  WebElement Scores = (new WebDriverWait(driver, 10))
 .until(ExpectedConditions.presenceOfElementLocated(By.linkText("Scores")));
  Scores.click();
- Thread.Sleep(300);a
+ Thread.Sleep(300);
 String pageTitle = driver.getTitle();
 assertEquals("NFL Scoreboard",pageTitle);
 }
