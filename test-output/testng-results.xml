@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="126449" started-at="2014-11-12T14:53:34Z" finished-at="2014-11-12T14:55:41Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="126449" started-at="2014-11-12T14:53:34Z" finished-at="2014-11-12T14:55:41Z">
+      <class name="script.SmokeTest">
+        <test-method status="PASS" signature="titleValidation()[pri:0, instance:script.SmokeTest@ddc652f]" name="titleValidation" is-config="true" duration-ms="4066" started-at="2014-11-12T09:53:34Z" finished-at="2014-11-12T09:53:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- titleValidation -->
+        <test-method status="PASS" signature="main()[pri:0, instance:script.SmokeTest@ddc652f]" name="main" duration-ms="122257" started-at="2014-11-12T09:53:38Z" finished-at="2014-11-12T09:55:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- main -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:script.SmokeTest@ddc652f]" name="afterMethod" is-config="true" duration-ms="116" started-at="2014-11-12T09:55:40Z" finished-at="2014-11-12T09:55:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- script.SmokeTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
