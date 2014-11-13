@@ -35,7 +35,7 @@ public class SmokeTest {
 		
 		// Navigate to http://espn.go.com
 		driver.navigate().to("http://espn.go.com");
-		
+		Thread.sleep(10000);
 		WebElement nfl= driver.findElement(By.name("&lpos=sitenavdefault&lid=sitenav_nfl"));
 		new Actions(driver).moveToElement(nfl).perform();
 		driver.findElement(By.name("&lpos=sitenavdefault&lid=nfl_scores")).click();

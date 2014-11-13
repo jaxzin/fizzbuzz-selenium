@@ -14,5 +14,10 @@
   		<artifactId>testng</artifactId>
   		<version>6.8.7</version>
   	</dependency>
+  	<dependency>
+	    <groupId>org.apache.ant</groupId>
+	    <artifactId>ant</artifactId>
+	    <version>1.9.4</version>
+	</dependency>
   </dependencies>
 </project>
