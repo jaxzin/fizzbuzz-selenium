@@ -20,7 +20,7 @@ public class SmokeTest {
 	@BeforeMethod
 	public void titleValidation(){
 		
-		//Create instance of Firefox driver
+		/*//Create instance of Firefox driver
 		driver = new FirefoxDriver();
 		
 		// Set globel time out for driver (Untill and maximun)
@@ -29,7 +29,7 @@ public class SmokeTest {
 		// Windows maximize
 		driver.manage().window().maximize();
 		//driver.manage().deleteAllCookies();
-	}
+*/	}
 	
 	@Test
 	public void main() throws InterruptedException {
@@ -57,7 +57,7 @@ public class SmokeTest {
 	public void afterMethod(){
 		
 		//Close current browser
-		driver.close();
+		/*driver.close();*/
 	}
 	
 

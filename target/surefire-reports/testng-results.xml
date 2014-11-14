@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="script.SmokeTest" duration-ms="42879" started-at="2014-11-14T05:38:36Z" finished-at="2014-11-14T05:39:19Z">
+  <suite name="script.SmokeTest" duration-ms="59" started-at="2014-11-14T06:14:08Z" finished-at="2014-11-14T06:14:08Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="42879" started-at="2014-11-14T05:38:36Z" finished-at="2014-11-14T05:39:19Z">
+    <test name="Command line test" duration-ms="59" started-at="2014-11-14T06:14:08Z" finished-at="2014-11-14T06:14:08Z">
       <class name="script.SmokeTest">
-        <test-method status="PASS" signature="titleValidation()[pri:0, instance:script.SmokeTest@154909b]" name="titleValidation" is-config="true" duration-ms="11910" started-at="2014-11-14T00:38:36Z" finished-at="2014-11-14T00:38:48Z">
+        <test-method status="PASS" signature="titleValidation()[pri:0, instance:script.SmokeTest@11d970]" name="titleValidation" is-config="true" duration-ms="17" started-at="2014-11-14T01:14:08Z" finished-at="2014-11-14T01:14:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- titleValidation -->
-        <test-method status="PASS" signature="main()[pri:0, instance:script.SmokeTest@154909b]" name="main" duration-ms="30397" started-at="2014-11-14T00:38:48Z" finished-at="2014-11-14T00:39:18Z">
+        <test-method status="PASS" signature="main()[pri:0, instance:script.SmokeTest@11d970]" name="main" duration-ms="4" started-at="2014-11-14T01:14:08Z" finished-at="2014-11-14T01:14:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- main -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:script.SmokeTest@154909b]" name="afterMethod" is-config="true" duration-ms="537" started-at="2014-11-14T00:39:18Z" finished-at="2014-11-14T00:39:19Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:script.SmokeTest@11d970]" name="afterMethod" is-config="true" duration-ms="1" started-at="2014-11-14T01:14:08Z" finished-at="2014-11-14T01:14:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->

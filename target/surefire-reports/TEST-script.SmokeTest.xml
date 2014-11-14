@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="script.SmokeTest" time="43.945" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="script.SmokeTest" time="1.039" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files (x86)\Java\jre8\bin"/>
@@ -26,7 +26,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 7"/>
-    <property name="classworlds.conf" value="C:\Users\Kamolesh\doc\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf8265186536135933477.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\Kamolesh\doc\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf7084696726136524205.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files (x86)\Java\jre8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files (x86)/Java/jre8/bin/client;C:/Program Files (x86)/Java/jre8/bin;C:/Program Files (x86)/Java/jre8/lib/i386;C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Java\jdk1.8.0_05\bin;C:\Dev\apache-ant-1.8.4\bin;C:\Dev\apache-maven-3.0.4\bin;C:\Dev\I_E Driver;C:\xampp\xampp\mysql\bin;C:\Program Files\TortoiseSVN\bin;C:\Dev\Android\adt-bundle-windows-x86-20130514\sdk\tools;C:\Dev\Android\adt-bundle-windows-x86-20130514\sdk\platform-tools;C:\Program Files (x86)\nodejs\;C:\Users\Kamolesh\AppData\Roaming\npm;C:\Windows\system32;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -61,5 +61,5 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
   </properties>
-  <testcase classname="script.SmokeTest" name="main" time="30.387"/>
+  <testcase classname="script.SmokeTest" name="main" time="0.003"/>
 </testsuite>
