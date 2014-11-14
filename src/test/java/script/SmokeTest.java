@@ -41,7 +41,7 @@ public class SmokeTest {
 		// Find NFL link
 		WebElement nfl= driver.findElement(By.name("&lpos=sitenavdefault&lid=sitenav_nfl"));
 		
-		// Move on to Scores NFL Link
+		// Move on to NFL Link
 		new Actions(driver).moveToElement(nfl).perform();
 		
 		// Click on Score Link
