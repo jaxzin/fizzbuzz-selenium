@@ -33,8 +33,8 @@ public class SmokeTest {
 	
 	@Test
 	public void main() throws InterruptedException {
-		
-		// Navigate to http://espn.go.com
+		System.out.println("Kamolesh");
+		/*// Navigate to http://espn.go.com
 		driver.navigate().to("http://espn.go.com");
 		Thread.sleep(10000);
 		
@@ -49,7 +49,7 @@ public class SmokeTest {
 		
 		
 		//Validate current page title is not "NFL Scoreboard".
-		Assert.assertFalse(driver.getTitle().equals("NFL Scoreboard"));
+		Assert.assertFalse(driver.getTitle().equals("NFL Scoreboard"));*/
 		
 	}
 	
