@@ -21,20 +21,20 @@ public class SmokeTest {
 	public void titleValidation(){
 		
 		//Create instance of Firefox driver
-		driver = new FirefoxDriver();
+	/*	driver = new FirefoxDriver();
 		
 		// Set globel time out for driver (Untill and maximun)
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
 		// Windows maximize
 		driver.manage().window().maximize();
-		//driver.manage().deleteAllCookies();
+		//driver.manage().deleteAllCookies();*/
 	}
 	
 	@Test
 	public void main() throws InterruptedException {
 	
-		// Navigate to http://espn.go.com
+	*/	// Navigate to http://espn.go.com
 		driver.navigate().to("http://espn.go.com");
 		Thread.sleep(10000);
 		
@@ -49,7 +49,7 @@ public class SmokeTest {
 		
 		
 		//Validate current page title is not "NFL Scoreboard".
-		Assert.assertFalse(driver.getTitle().equals("NFL Scoreboard"));
+		Assert.assertFalse(driver.getTitle().equals("NFL Scoreboard"));*/
 		
 	}
 	
@@ -57,7 +57,7 @@ public class SmokeTest {
 	public void afterMethod(){
 		
 		//Close current browser
-		driver.close();
+		//driver.close();
 	}
 	
 
