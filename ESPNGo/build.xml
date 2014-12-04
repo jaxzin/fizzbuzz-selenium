@@ -74,7 +74,7 @@
     </target>
 
     <!-- run -->
-    <target name="test" depends="compile">
+    <target name="run" depends="compile">
         <testng classpath="${test.classpath}:${test.dest}" suitename="ESPNGO">	
             <xmlfileset dir="${ws.home}" includes="testng.xml"/>
         </testng>
