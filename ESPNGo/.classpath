@@ -1,26 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" output="target/classes" path="src/main/java">
-		<attributes>
-			<attribute name="optional" value="true"/>
-			<attribute name="maven.pomderived" value="true"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
-		<attributes>
-			<attribute name="optional" value="true"/>
-			<attribute name="maven.pomderived" value="true"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="output" path="target/classes"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5"/>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/apache-mime4j-0.6.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/bsh-1.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/cglib-nodep-2.1_3.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/commons-beanutils-1.8.0.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/commons-codec-1.9.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/commons-exec-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/commons-jxpath-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/commons-lang3-3.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/commons-logging-1.1.3.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/cssparser-0.9.11.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/derbyclient.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/dom4j-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/eclipselink-2.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/flash-selenium.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/guava-15.0.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/hamcrest-core-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/hamcrest-library-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/htmlunit-2.14.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/htmlunit-core-js-2.14.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/httpclient-4.3.2.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/httpcore-4.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/httpmime-4.3.2.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/ini4j-0.5.2.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/javax.persistence-2.0.0.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/jcommander-1.29.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/jetty-websocket-8.1.8.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/jna-3.4.0.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/jna-platform-3.4.0.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/json-20080701.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/junit.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/junit-dep-4.11.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/log4j-1.2.14.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/logging-selenium-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/mail.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/mysql-connector-java-5.0.7-bin(2).jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/nekohtml-1.9.20.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/netty-3.5.7.Final.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/ojdbc6.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/ojdbc7.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/operadriver-1.5.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/phantomjsdriver-1.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/poi-3.6-20091214.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/poi-ooxml-3.6-20091214.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/poi-ooxml-schemas-3.6-20091214.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/protobuf-java-2.4.1.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/sac-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/saxon-8.7.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/SaxonLiaison.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/selenium-java-2.42.2.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/selenium-java-2.42.2-srcs.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/selenium-java-client-driver.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/selenium-java-client-driver-sources.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/selenium-java-client-driver-tests.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/selenium-java-client-driver-test-sources.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/selenium-server.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/selenium-server-coreless.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/selenium-server-sources.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/serializer-2.7.1.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/testng.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/testng-6.8.5.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/testng-xslt-maven-plugin-test-0.0.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/validation-api-1.0.0.GA.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/xalan-2.7.1.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/xercesImpl-2.11.0.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/xml-apis-1.4.01.jar"/>
+	<classpathentry kind="lib" path="C:/MyWorkSpace/ESPNGo/JavaJars/xmlbeans-2.3.0.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
 </classpath>

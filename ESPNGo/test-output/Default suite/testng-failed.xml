@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Test.EspnGo">
+      <class name="com.espngo.pages.NFLPage">
         <methods>
           <include name="setup"/>
-          <include name="checkScores"/>
           <include name="tearDown"/>
+          <include name="checkScores"/>
         </methods>
-      </class> <!-- Test.EspnGo -->
+      </class> <!-- com.espngo.pages.NFLPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
