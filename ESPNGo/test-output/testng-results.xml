@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="ESPNGO" duration-ms="21176" started-at="2014-12-04T06:05:08Z" finished-at="2014-12-04T06:05:30Z">
+  <suite name="Default suite" duration-ms="18308" started-at="2014-12-04T08:31:09Z" finished-at="2014-12-04T08:31:28Z">
     <groups>
     </groups>
-    <test name="NFL Score" duration-ms="21176" started-at="2014-12-04T06:05:08Z" finished-at="2014-12-04T06:05:30Z">
-      <class name="com.espngo.pages.EspnGo">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.espngo.pages.EspnGo@dbe50f]" name="setup" is-config="true" duration-ms="3165" started-at="2014-12-04T01:05:08Z" finished-at="2014-12-04T01:05:12Z">
+    <test name="Default test" duration-ms="18308" started-at="2014-12-04T08:31:09Z" finished-at="2014-12-04T08:31:28Z">
+      <class name="Test.EspnGo">
+        <test-method status="PASS" signature="setup()[pri:0, instance:Test.EspnGo@fc77f54]" name="setup" is-config="true" duration-ms="3399" started-at="2014-12-04T03:31:09Z" finished-at="2014-12-04T03:31:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="checkScores()[pri:0, instance:com.espngo.pages.EspnGo@dbe50f]" name="checkScores" duration-ms="8469" started-at="2014-12-04T01:05:12Z" finished-at="2014-12-04T01:05:20Z">
+        <test-method status="PASS" signature="checkScores()[pri:0, instance:Test.EspnGo@fc77f54]" name="checkScores" duration-ms="9915" started-at="2014-12-04T03:31:13Z" finished-at="2014-12-04T03:31:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkScores -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.espngo.pages.EspnGo@dbe50f]" name="tearDown" is-config="true" duration-ms="9530" started-at="2014-12-04T01:05:20Z" finished-at="2014-12-04T01:05:30Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Test.EspnGo@fc77f54]" name="tearDown" is-config="true" duration-ms="4977" started-at="2014-12-04T03:31:23Z" finished-at="2014-12-04T03:31:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.espngo.pages.EspnGo -->
-    </test> <!-- NFL Score -->
-  </suite> <!-- ESPNGO -->
+      </class> <!-- Test.EspnGo -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
