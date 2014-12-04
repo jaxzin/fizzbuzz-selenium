@@ -2,7 +2,7 @@
 <!DOCTYPE project [
 ]>
 
-<project name="Facebook POM Pagefactory" default="usage" basedir=".">  
+<project name="ESPNGO" default="usage" basedir=".">  
 
 <!-- ========== Initialize Properties =================================== -->
     <property environment="env"/>    
@@ -86,7 +86,6 @@
     </target>
 	
 	
-	
 
     <target name="usage">
         <echo>
@@ -94,14 +93,16 @@
         </echo>
     </target>
 	
-
+	<target name="test" depends="run">
+    </target>
+	
 	<path id="test.c">
 	        <fileset dir="${ws.jars}" includes="*.jar"/>
 
 	</path>
 	
 	<target name="email" >
-	       <java classname="com.qtpselenium.util.SendMail" classpath="${test.dest}" classpathref="test.c" />
+	       <java classname="com.testproject.util.SendMail" classpath="${test.dest}" classpathref="test.c" />
     </target>
 	
 	  <target name="makexsltreports">
