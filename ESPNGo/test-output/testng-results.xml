@@ -2,24 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="ESPNGO" duration-ms="21176" started-at="2014-12-04T06:05:08Z" finished-at="2014-12-04T06:05:30Z">
+  <suite name="Default suite" duration-ms="21197" started-at="2014-12-05T01:10:19Z" finished-at="2014-12-05T01:10:40Z">
     <groups>
     </groups>
-    <test name="NFL Score" duration-ms="21176" started-at="2014-12-04T06:05:08Z" finished-at="2014-12-04T06:05:30Z">
+    <test name="Default test" duration-ms="21197" started-at="2014-12-05T01:10:19Z" finished-at="2014-12-05T01:10:40Z">
       <class name="com.espngo.pages.EspnGo">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.espngo.pages.EspnGo@dbe50f]" name="setup" is-config="true" duration-ms="3165" started-at="2014-12-04T01:05:08Z" finished-at="2014-12-04T01:05:12Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.espngo.pages.EspnGo@5d52a1b7]" name="setup" is-config="true" duration-ms="3539" started-at="2014-12-04T20:10:19Z" finished-at="2014-12-04T20:10:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="checkScores()[pri:0, instance:com.espngo.pages.EspnGo@dbe50f]" name="checkScores" duration-ms="8469" started-at="2014-12-04T01:05:12Z" finished-at="2014-12-04T01:05:20Z">
+        <test-method status="PASS" signature="checkScores()[pri:0, instance:com.espngo.pages.EspnGo@5d52a1b7]" name="checkScores" duration-ms="17647" started-at="2014-12-04T20:10:22Z" finished-at="2014-12-04T20:10:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkScores -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.espngo.pages.EspnGo@dbe50f]" name="tearDown" is-config="true" duration-ms="9530" started-at="2014-12-04T01:05:20Z" finished-at="2014-12-04T01:05:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
       </class> <!-- com.espngo.pages.EspnGo -->
-    </test> <!-- NFL Score -->
-  </suite> <!-- ESPNGO -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
