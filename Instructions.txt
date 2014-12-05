@@ -1,3 +1,0 @@
-To execute manually: Right click on test.xml and run as testng.xml
-
-To execute with ant: navigate to the directory and use command "ant clean compile run"
