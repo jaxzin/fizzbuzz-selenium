@@ -93,7 +93,7 @@
         </echo>
     </target>
 	
-	<target name="test" depends="run">
+	<target name="deps" depends="run">
     </target>
 	
 	<path id="test.c">
