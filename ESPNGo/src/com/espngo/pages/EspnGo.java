@@ -97,6 +97,7 @@ public class EspnGo {
 	
 	@AfterTest
 	public void tearDown(){
+	//	driver.close();
 		driver.quit();
 		driver = null;
 		
