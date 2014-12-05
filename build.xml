@@ -93,6 +93,8 @@
         </echo>
     </target>
 	
+	<target name="test" depends="run">
+    </target>
 	<target name="deps" depends="run">
     </target>
 	
