@@ -1,9 +1,10 @@
 import junit.framework.Assert;
-
 import org.junit.Test;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-public class NFLTest
+
+public class NFLSCORE
 
 {
 @Test
@@ -11,8 +12,15 @@ public void TestTitle()
 
 {
 WebDriver dr= new FirefoxDriver();
-dr.get("http://scores.espn.go.com/nfl/scoreboard");
+dr.get("http://espn.go.com/");
 
+    //Clicking on NFL link
+dr.findElement(By.name("&lpos=sitenavdefault&lid=sitenav_nfl")).click();
+
+    //Clicking on Score link
+dr.findElement(By.name("&lpos=subnav&lid=subnav_NFL_Scoreboard")).click();
+
+    //Validating the page title
 String ptitle=dr.getTitle();
 Assert.assertTrue("Title not found!", ptitle.contains("NFL Scoreboard"));
 
