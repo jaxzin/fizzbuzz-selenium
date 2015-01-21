@@ -1,5 +1,5 @@
 language: java
 jdk:
   - openjdk6
-before_install: mvn install -DskipTests=true -DfinalName=helloci
+before_install: mvn install -DskipTests=true
 script: mvn test
