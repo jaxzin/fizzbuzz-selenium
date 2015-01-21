@@ -18,8 +18,8 @@ public class ESPN_NFLTest {
 	 
 	  @BeforeMethod
 	  public void beforeMethod() {
-		  //Initializing WebDriver
-		  String PathtoChromeDriver = "C://Users//spawa1//selenium//chromedriver.exe";
+		   //Initializing WebDriver
+		  String PathtoChromeDriver = "/src/test/resources/chromedriver.exe";
 		  System.setProperty("webdriver.chrome.driver",PathtoChromeDriver );
 		  driver = new ChromeDriver();
 	      }
