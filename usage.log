@@ -1,0 +1,5 @@
+To build project: 
+$> mvn clean install
+
+To run test:
+$> mvn -Dtest=EspnSeleniumTest2 test
