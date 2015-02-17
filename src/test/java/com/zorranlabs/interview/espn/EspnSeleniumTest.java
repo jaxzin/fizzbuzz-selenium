@@ -6,7 +6,7 @@ import org.junit.Assert;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class EspnSeleniumTest2 extends TestCase {
+public class EspnSeleniumTest extends TestCase {
     private WebDriver driver;
 
     public void setUp() throws Exception {

@@ -18,7 +18,7 @@
                 <version>2.18.1</version>
                 <configuration>
                     <includes>
-                        <include>EspnSeleniumTest2.java</include>
+                        <include>**/*Test.*</include>
                     </includes>
                 </configuration>
             </plugin>
