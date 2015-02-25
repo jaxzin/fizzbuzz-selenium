@@ -2,3 +2,7 @@ language: java
 jdk:
   - oraclejdk8
 script: ant
+env:
+  global:
+    - secure: “rduvalwa5”
+    - secure: “Red1Dawg"
