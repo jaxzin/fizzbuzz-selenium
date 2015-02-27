@@ -1,0 +1,8 @@
+language: java
+jdk:
+<<<<<<< HEAD
+  - oraclejdk8
+script: ant
+=======
+- oraclejdk8
+>>>>>>> b368da3a3279dc03dc163d85f814182029d8758e
