@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-  <testsuite errors="0" failures="0" hostname="C1246895-Air.home" id="0" name="Test_NavEspn" package="" skipped="0" tests="1" time="16.481" timestamp="2015-02-24T18:00:48">
+  <testsuite errors="1" failures="0" hostname="C1246895-Air.home" id="0" name="Test_NavEspn" package="" skipped="0" tests="1" time="0.0" timestamp="2015-02-27T21:06:17">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -148,7 +148,11 @@
 
       </properties>
 
-      <testcase classname="Test_NavEspn" name="testEspn" time="16.314" />
+      <error message="Test_NavEspn" type="java.lang.ClassNotFoundException">java.lang.ClassNotFoundException: Test_NavEspn
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:344)
+</error>
 
       <system-out><![CDATA[]]></system-out>
 
