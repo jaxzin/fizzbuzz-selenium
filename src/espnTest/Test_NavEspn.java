@@ -1,3 +1,4 @@
+package espnTest;
 /*
  * Firefox 35
  * selenium-server-standalone-2.44.0.jar
@@ -48,7 +49,7 @@ public class Test_NavEspn {
 
 	  @Test
 	  public void testEspn() throws Exception {
-	    driver.get(baseUrl);
+	    homePage(driver,baseUrl);
 	    for (int second = 0;; second++) {
 	    	if (second >= 60) fail("timeout");
 	    	try { if ("ESPN: The Worldwide Leader In Sports".equals(driver.getTitle())) break; } catch (Exception e) {}
