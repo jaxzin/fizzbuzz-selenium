@@ -45,7 +45,7 @@
 				</fileset>
 			</classpath>
 
-			<test name="Test_NavEspn" haltonfailure="no" todir="${report}/xml" outfile="TEST-result">
+			<test name="espnTest.Test_NavEspn" haltonfailure="no" todir="${report}/xml" outfile="TEST-result">
 				<formatter type="xml" />
 			</test>
 		</junit>
