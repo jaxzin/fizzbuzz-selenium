@@ -12,6 +12,6 @@ This is a QA engineering example. Please perform the following steps:
 
 ## Tips
 1. **Read the instructions thoroughly**, reading comprehension is a large part of the evaluation.
-2. Emailing a java file will not be accepted, refer to tip #1.
+2. Emailing source files or executables will not be accepted, refer to tip #1.
 3. An ideal submission will demonstrate how to use the [Page Object pattern](https://code.google.com/p/selenium/wiki/PageObjects).
 4. Naming conventions are extremely important for maintainable code. A strong submission will adhere to the standard conventions of the language you choose to use, for example the [standard Java conventions](http://java.about.com/od/javasyntax/a/nameconventions.htm).
