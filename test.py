@@ -16,9 +16,6 @@ inputElement = driver.find_element_by_name("&lpos=sitenavdefault&lid=sitenav_nfl
 # Click the found link
 inputElement.click()
 
-# Print the page title:
-print driver.title
-
 try:
     # we have to wait for the page to refresh, the last thing that seems to be updated is the title
     WebDriverWait(driver, 10).until(EC.title_contains("NFL"))
