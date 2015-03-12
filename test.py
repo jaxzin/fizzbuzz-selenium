@@ -1,40 +1,47 @@
-# Common dependencies
+##
+# Core dependencies
+#
+from page_objects import PageObject, PageElement
 from selenium import webdriver
-from selenium.common.exceptions import TimeoutException
+
+##
+# Additional dependencies
+#
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-
-# Import actions (e.g. hovering)
 from selenium.webdriver.common.action_chains import ActionChains
 
-# Create a new instance of the Firefox driver
-driver = webdriver.Firefox()
+##
+# Test Classes
+#
+class BasePage(object):
+  url = None
 
-# Navigate to http://espn.go.com/
-driver.get("http://espn.go.com/")
+  def __init__(self, driver):
+    self.driver = driver
 
-# Find the NFL parent menu item
-parentElement = driver.find_element_by_name("&lpos=sitenavdefault&lid=sitenav_nfl")
+  def navigate(self):
+    self.driver.get(self.url)
 
-# Hover over the NFL parent menu item
-hov = ActionChains(driver).move_to_element(parentElement)
-hov.perform()
-
-# Find the Scores child menu item
-childElement = driver.find_element_by_name("&lpos=sitenavdefault&lid=nfl_scores")
-
-# Click the found link
-childElement.click()
-
-try:
-    # Wait for the page title to load
-    WebDriverWait(driver, 10).until(EC.title_contains("NFL"))
-
-    # Find the section title
+  def assertSectionTitle(self, title):
     sectionTitleElement = driver.find_element_by_css_selector(".espn-logo .section-title")
+    assert sectionTitleElement.text == title
 
-    # Verify the page title
-    assert sectionTitleElement.text == 'NFL Scoreboard'
+class HomePage(BasePage):
+  url = "http://espn.go.com/"
 
-finally:
-    driver.quit()
+  def clickScoresLink(self):
+    parentElement = self.driver.find_element_by_name("&lpos=sitenavdefault&lid=sitenav_nfl")
+    ActionChains(driver).move_to_element(parentElement).perform()
+    driver.find_element_by_name("&lpos=sitenavdefault&lid=nfl_scores").click()
+
+##
+# Execute test
+#
+driver = webdriver.Firefox()
+page = HomePage(driver)
+page.navigate()
+page.clickScoresLink()
+WebDriverWait(driver, 10).until(EC.title_contains("NFL"))
+page.assertSectionTitle('NFL Scoreboard')
+driver.quit()
