@@ -1,4 +1,4 @@
-# Dependencies
+# Common dependencies
 from selenium import webdriver
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait
@@ -27,11 +27,14 @@ childElement = driver.find_element_by_name("&lpos=sitenavdefault&lid=nfl_scores"
 childElement.click()
 
 try:
-    # we have to wait for the page to refresh, the last thing that seems to be updated is the title
+    # Wait for the page title to load
     WebDriverWait(driver, 10).until(EC.title_contains("NFL"))
 
+    # Find the section title
+    sectionTitleElement = driver.find_element_by_css_selector(".espn-logo .section-title")
+
     # Verify the page title
-    assert driver.title == 'NFL Football Teams, Scores, Stats, News, Standings, Rumors - National Football League - ESPN'
+    assert sectionTitleElement.text == 'NFL Scoreboard'
 
 finally:
     driver.quit()
