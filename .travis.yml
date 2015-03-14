@@ -13,4 +13,5 @@ python:
 install:
 - 'pip install selenium'
 - 'pip install sauceclient'
+- 'pip install page_objects'
 script: python test.py
