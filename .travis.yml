@@ -1,0 +1,17 @@
+env:
+  global:
+    - secure: J+LuMycJwme1qoFFZ+5bF6Mw3ptqGbshHBuGP2r3rSnGYc6Hfx2wuER6yEF1Y5NjNp0Z11JboqL/dZb2Oiptt4x76i9Io4XbZ0ObujnXKG+FFZrVseJMhicp2eIpp8ZPdVBFp6mLTXZblqki+l+Fpuu4mvOdKSwYDCg+ViBLXzI=
+    - secure: FPHYVUFsSMD4qAR2AyVx/5A3urlx/A49kph39lyYz1v9W21pyXrmS/K5H2KAnIUr+GSS3fE96xLjO795Xa+5Hn6GGoQm5qkFY5nbTHV545OGAK9wP/Zj4/55qDicom4ikRyrmGj8oFxJo06XxkefCow6F3ISd8MiG/UZfCJOsrk=
+
+addons:
+  sauce_connect: true
+
+language: python
+python:
+- '2.7'
+- '2.6'
+install:
+- 'pip install selenium'
+- 'pip install sauceclient'
+- 'pip install page_objects'
+script: python test.py
