@@ -10,6 +10,24 @@ from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
+from sauceclient import SauceClient
+
+# Import os for use of environmental variables
+import os
+
+# Start Saucelabs connection
+sauce_url = "http://betweenbrain:e2007f7b-afd4-43a3-af7f-c5087c82199a@ondemand.saucelabs.com:80/wd/hub"
+
+desired_capabilities = {
+    'platform': "Windows 8",
+    'browserName': "firefox",
+    'version': "36",
+}
+
+driver = webdriver.Remote(desired_capabilities=desired_capabilities,
+                          command_executor=sauce_url)
+driver.implicitly_wait(10)
+# End Saucelabs connection
 
 ##
 # Test Classes
@@ -38,10 +56,13 @@ class HomePage(BasePage):
 ##
 # Execute test
 #
-driver = webdriver.Firefox()
 page = HomePage(driver)
 page.navigate()
 page.clickScoresLink()
 WebDriverWait(driver, 10).until(EC.title_contains("NFL"))
 page.assertSectionTitle('NFL Scoreboard')
 driver.quit()
+
+# Report test results back to Sauce Labs
+sauce_client = SauceClient("betweenbrain", "e2007f7b-afd4-43a3-af7f-c5087c82199a")
+sauce_client.jobs.update_job(driver.session_id, passed=True, name=os.environ["TRAVIS_BUILD_NUMBER"])
