@@ -1,6 +1,8 @@
 fizzbuzz-selenium
 =================
 
+[![Build Status](https://travis-ci.org/betweenbrain/fizzbuzz-selenium.svg?branch=develop)](https://travis-ci.org/betweenbrain/fizzbuzz-selenium)
+
 This is a QA engineering example. Please perform the following steps:
 
 1. [Fork this repository](https://help.github.com/articles/fork-a-repo)
