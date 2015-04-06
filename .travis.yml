@@ -1,2 +1,2 @@
 language: java
-script: mvn clean test -Dtest=test.EspnNflTests.*
+script: mvn clean test -Dtest=test.EspnNflTests*
