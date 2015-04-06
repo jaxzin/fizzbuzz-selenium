@@ -16,7 +16,10 @@ public class TestBase
     @Before
     public void setUp()
     {
+        // Choose the browser, version, and platform to test
         DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+        capabilities.setCapability("version", "17");
+        capabilities.setCapability("platform", Platform.XP);
         // Create the connection to Sauce Labs to run the tests
         this.driver = new RemoteWebDriver(
                 new URL("http://imtihoss:ce4378aa-362e-4c67-a319-c21b38ae5c6a@ondemand.saucelabs.com:80/wd/hub"),
