@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/fizzbuzz-selenium-imtiaz.iml" filepath="$PROJECT_DIR$/fizzbuzz-selenium-imtiaz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/fizzbuzz-selenium.iml" filepath="$PROJECT_DIR$/.idea/fizzbuzz-selenium.iml" />
     </modules>
   </component>
 </project>
