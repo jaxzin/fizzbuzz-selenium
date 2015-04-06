@@ -16,9 +16,11 @@ public class TestBase
     @Before
     public void setUp()
     {
-        //start ff driver
-        driver = new FirefoxDriver();
-        //go to url
+        DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+        // Create the connection to Sauce Labs to run the tests
+        this.driver = new RemoteWebDriver(
+                new URL("http://imtihoss:ce4378aa-362e-4c67-a319-c21b38ae5c6a@ondemand.saucelabs.com:80/wd/hub"),
+                capabilities);
         driver.get("http://espn.go.com");
         //maximize window
         driver.manage().window().maximize();
