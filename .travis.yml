@@ -1,0 +1,10 @@
+language: java
+addons:
+  sauce_connect:
+    username: "imtihoss"
+    access_key: "ce4378aa-362e-4c67-a319-c21b38ae5c6a"
+env:
+  global:
+    - REPO="https://github.com/imtiazhossain/fizzbuzz-selenium/tree/imtiaz/imtiaz"
+    - CI_HOME=`pwd`/$REPO
+script: mvn clean test -Dtest=EspnNflTests*
